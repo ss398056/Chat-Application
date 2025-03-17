@@ -17,7 +17,7 @@ import express from 'express'
 
 app.use(express.json())
 app.use(cors({
-  origin: ['http://localhost:5173','http://localhost:5000'],
+  origin: "*",
   credentials: true
 }))
 app.use(cookieParser())
@@ -36,7 +36,7 @@ import { errorMiddleware } from './middlewares/error.middleware.js'
 app.use(errorMiddleware)
 
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8080;        //5000 used for local
 server.listen(port, () => {
     console.log(`Your server working on port ${port}`)
   })
