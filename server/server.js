@@ -36,7 +36,7 @@ import { errorMiddleware } from './middlewares/error.middleware.js'
 app.use(errorMiddleware)
 
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 server.listen(port, () => {
     console.log(`Your server working on port ${port}`)
   })
