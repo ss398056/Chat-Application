@@ -1,0 +1,11 @@
+All required pakages
+
+1. Install react vite
+2. Taliwindcss vite
+3. DaisyUi
+4. React Router Dom
+5. ract-icons
+6. React Redux toolkit
+7. react-hot-toast
+8. axios
+9. react-spinners
