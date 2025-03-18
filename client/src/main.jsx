@@ -6,7 +6,7 @@ import Login from "./pages/Authentication/Login.jsx";
 import Signup from "./pages/Authentication/Signup.jsx";
 import { Provider } from "react-redux";
 import { store } from "./store/Store.js";
-import Home from "./pages/Home/Home.jsx";
+import Home from "./pages/home/Home.jsx";
 import ProtectedRoutes from "./utilities/ProtectedRoutes.jsx";
 
 //This is new way to set up react router
