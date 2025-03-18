@@ -4,9 +4,9 @@ const baseURL = import.meta.env.VITE_BASE_URL;
 console.log(baseURL)
 export const axiosInstance = axios.create({
     baseURL: baseURL,
-    credentials: "include",
+    withCredentials: true,
     headers: {
-        "ContentType" : "application/json"
+        "Content-Type" : "application/json"
     }
   });
 
