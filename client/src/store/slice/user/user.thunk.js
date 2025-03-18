@@ -4,7 +4,8 @@ import { axiosInstance } from "../../../utilities/axios.instance.js";
 
 export const loginUserThunk =  createAsyncThunk('user/login',async ({username,password}, thunkAPI) => {
     try{
-        console.log("Sending login request")
+        console.log(username)
+        console.log(password)
         const response = await axiosInstance.post('/user/login', {
             username,
             password
