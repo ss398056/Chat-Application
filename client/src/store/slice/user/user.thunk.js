@@ -15,7 +15,7 @@ export const loginUserThunk =  createAsyncThunk('user/login',async ({username,pa
     catch(error){
          //console.log(error.response.data.error)
         // toast.error(error.response.data.error)
-        return thunkAPI.rejectWithValue(error?.response?.data?.error)
+        return thunkAPI.rejectWithValue(error?.response?.data?.error || "Something went wrong!")
     }
 })
 
