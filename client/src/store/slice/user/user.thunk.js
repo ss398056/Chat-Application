@@ -13,7 +13,7 @@ export const loginUserThunk =  createAsyncThunk('user/login',async ({username,pa
         return data;
     }
     catch(error){
-         console.log(error.response.data.error)
+         //console.log(error.response.data.error)
         // toast.error(error.response.data.error)
         return thunkAPI.rejectWithValue(error?.response?.data?.error)
     }
