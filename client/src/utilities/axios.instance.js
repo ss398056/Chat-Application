@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const baseURL = import.meta.env.VITE_BASE_URL;
+const baseURL = "https://chat-application-production-9095.up.railway.app/api/chat/app/v1";
 
 export const axiosInstance = axios.create({
     baseURL: baseURL,
