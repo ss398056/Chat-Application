@@ -19,7 +19,7 @@ app.use(express.json())
 app.use(cors({
   origin: [
     "https://chat-application-git-main-sandeeps-projects-cb877a64.vercel.app",
-    "http://localhost:5173"
+    "http://localhost:5174"
   ],
   credentials: true,
 }));
