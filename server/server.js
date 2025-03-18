@@ -17,7 +17,7 @@ import express from 'express'
 
 app.use(express.json())
 app.use(cors({
-  origin: '*',
+  origin: ["https://chat-application-git-main-sandeeps-projects-cb877a64.vercel.app", "https://chat-application-snn5ddomg-sandeeps-projects-cb877a64.vercel.app"],
   credentials: true
 }))
 app.use(cookieParser())
