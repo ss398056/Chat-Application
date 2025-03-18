@@ -17,7 +17,7 @@ import express from 'express'
 
 app.use(express.json())
 app.use(cors({
-  origin: ['http://localhost:5173','http://localhost:5000'],
+  origin: 'https://chat-application-production-9095.up.railway.app',
   credentials: true
 }))
 app.use(cookieParser())
