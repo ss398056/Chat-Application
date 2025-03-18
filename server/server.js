@@ -20,7 +20,8 @@ app.use(cors({
   origin: ["https://chat-application-git-main-sandeeps-projects-cb877a64.vercel.app", "https://chat-application-snn5ddomg-sandeeps-projects-cb877a64.vercel.app"],
   credentials: true,  // ✅ Required for cookies
   methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"]
+  allowedHeaders: ["Content-Type", "Authorization"],
+  exposedHeaders: ["Set-Cookie"],
 }))
 app.use(cookieParser())
 
