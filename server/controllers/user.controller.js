@@ -38,7 +38,7 @@ export const register = asyncHandler(async (req, res, next) => {
     .cookie("token", token, {
       expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), //7days expire
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
+      secure: true,
       sameSite: "None",
     })
     .json({
@@ -79,7 +79,7 @@ export const login = asyncHandler(async (req, res, next) => {
     .cookie("token", token, {
       expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), //7days expire
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
+      secure: true,
       sameSite: "None",
     })
     .json({
