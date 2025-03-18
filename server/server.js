@@ -18,12 +18,10 @@ import express from 'express'
 app.use(express.json())
 app.use(cors({
   origin: [
+    "https://chat-application-git-main-sandeeps-projects-cb877a64.vercel.app",
     "http://localhost:5173"
   ],
-  credentials: true,  // ✅ Required for cookies
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-  exposedHeaders: ["Set-Cookie"] // ✅ Exposes cookie header
+  credentials: true,
 }));
 
 
