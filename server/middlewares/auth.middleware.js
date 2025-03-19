@@ -4,6 +4,7 @@ import jwt from "jsonwebtoken";
 
 export const isAuthenticated = asyncHandler(async (req, res, next) => {
     const token = req.cookies?.token;
+    console.log("token",token)
     if (!token) {
       return next(new errorHandler("Unauthorized Request/Token", 401));
     }
