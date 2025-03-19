@@ -17,7 +17,7 @@ import express from 'express'
 
 app.use(express.json())
 app.use(cors({
-  origin: "*",
+  origin: ["https://chat-application-orcin-zeta.vercel.app"],
   credentials: true,
 }));
 
