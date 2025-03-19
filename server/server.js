@@ -17,7 +17,7 @@ import express from 'express'
 
 app.use(express.json())
 app.use(cors({
-  origin: "https://chat-application-seven-lyart.vercel.app",
+  origin: "*",
   credentials: true,
 }));
 
