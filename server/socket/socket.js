@@ -8,7 +8,6 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: ["https://chat-application-orcin-zeta.vercel.app"],
-    credentials: true,
   },
 });
 
