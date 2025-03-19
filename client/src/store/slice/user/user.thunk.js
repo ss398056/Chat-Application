@@ -6,6 +6,7 @@ export const loginUserThunk =  createAsyncThunk('user/login',async ({username,pa
     try{
         console.log(username)
         console.log(password)
+        console.log(axiosInstance)
         const response = await axiosInstance.post('/user/login', {
             username,
             password
