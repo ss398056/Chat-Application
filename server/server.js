@@ -10,6 +10,8 @@ import ConnectDB from './db/connection.db.js'
 ConnectDB();
 
 import cookieParser from 'cookie-parser';
+app.use(cookieParser())
+
 import cors from 'cors'
 
 //Create express app
@@ -22,7 +24,7 @@ app.use(cors({
 }));
 
 
-app.use(cookieParser())
+
 
 //User Routes
 import userRoute from './routes/user.route.js'
