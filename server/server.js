@@ -13,23 +13,18 @@ import cookieParser from 'cookie-parser';
 app.use(cookieParser())
 
 import cors from 'cors'
-
-//Create express app
-import express from 'express'
-
-app.use(express.json())
 app.use(cors({
   origin: ["https://chat-application-orcin-zeta.vercel.app"],
   credentials: true,
 }));
 
-
-
+//Create express app
+import express from 'express'
+app.use(express.json())
 
 //User Routes
 import userRoute from './routes/user.route.js'
 app.use('/api/chat/app/v1/user',userRoute)
-
 
 //Message Routes
 import messageRoute from './routes/message.route.js';
