@@ -14,7 +14,7 @@ app.use(cookieParser())
 
 import cors from 'cors'
 app.use(cors({
-  origin: ["https://chat-application-orcin-zeta.vercel.app"],
+  origin: ["http://localhost:5173","https://chat-application-orcin-zeta.vercel.app"],
   credentials: true,
 }));
 
@@ -35,7 +35,7 @@ import { errorMiddleware } from './middlewares/error.middleware.js'
 app.use(errorMiddleware)
 
 
-const port = process.env.PORT || 8080;        //5000 used for local
+const port = process.env.PORT || 5000;        //5000 used for local
 server.listen(port, () => {
     console.log(`Your server working on port ${port}`)
   })
